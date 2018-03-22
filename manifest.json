@@ -1,0 +1,25 @@
+{
+  "name": "TabCount",
+  "description": "開いたタブの数をツイートする拡張機能",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+    },
+  "manifest_version": 2,
+  "version": "0.3",
+  "content_security_policy": "script-src 'self' https://platform.twitter.com; object-src 'self'",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "TabCountTweet",
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
